@@ -1,0 +1,29 @@
+:root {
+  --background-colour: lightgrey;
+  --border-width: 0.125rem;
+  --border: var(--border-width) solid black;
+}
+nav {
+  margin-bottom: calc(-1 * var(--border-width));
+}
+ul {
+  display: flex;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+}
+a {
+  border-radius: 0;
+  border: var(--border);
+  display: inline-block;
+  padding: 1px 6px;
+}
+a.active {
+  background-color: var(--background-colour);
+  border-bottom-color: var(--background-colour);
+}
+main {
+  background-color: var(--background-colour);
+  border: var(--border);
+  padding: 1rem;
+}

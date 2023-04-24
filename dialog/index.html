@@ -1,0 +1,21 @@
+<form>
+  <button formaction="dialog.html">Open dialog</button>
+</form>
+
+<div class="dialog"></div>
+
+<script>
+  async function handleClick({ target }) {
+    try {
+      event.preventDefault();
+      const response = await fetch(target.formAction);
+      const text = await response.text();
+      dialogEl.innerHTML = text;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  const dialogEl = document.querySelector(".dialog");
+  const buttonEl = document.querySelector("button");
+  buttonEl.addEventListener("click", handleClick);
+</script>

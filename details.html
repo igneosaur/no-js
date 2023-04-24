@@ -1,0 +1,35 @@
+<h1>Details element</h1>
+<h2>Default usage</h2>
+<details>
+  <summary>Summary</summary>
+  Details element.
+</details>
+<h2>Tooltip</h2>
+<details class="tooltip">
+  <summary>i</summary>
+  <div>Tooltip information</div>
+</details>
+<style>
+  .tooltip {
+    position: relative;
+  }
+  .tooltip summary {
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    border: 0.2rem solid black;
+    font-size: 2rem;
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+  }
+  .tooltip div {
+    position: absolute;
+    padding: 1rem;
+    border: 0.2rem solid black;
+    box-shadow: 0.5rem 0.5rem 1rem black;
+    top: 1rem;
+    left: 3rem;
+  }
+</style>

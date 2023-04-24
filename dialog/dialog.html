@@ -1,0 +1,15 @@
+<dialog open>
+  <a href="index.html">x</a>
+  <h1>Dialog</h1>
+  <p>"Let's open a dialog."</p>
+</dialog>
+
+<script>
+  function handleClose(event) {
+    event.preventDefault();
+    dialogEl.remove();
+  }
+  const dialogEl = document.querySelector("dialog");
+  const anchorEl = document.querySelector("a");
+  anchorEl.addEventListener("click", handleClose);
+</script>
