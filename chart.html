@@ -10,13 +10,16 @@
 <div class="pie"></div>
 <style>
   .pie {
+    --first: 33%;
+    --second: 66%;
+    --third: 100%;
     aspect-ratio: 1;
     background-image: conic-gradient(
-      tomato 33%,
-      goldenrod 33%,
-      goldenrod 66%,
-      teal 66%,
-      teal
+      tomato var(--first),
+      goldenrod var(--first),
+      goldenrod var(--second),
+      teal var(--second),
+      teal var(--third)
     );
     border-radius: 50%;
     width: 20rem;
