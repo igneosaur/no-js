@@ -8,23 +8,19 @@
   </a>
 </p>
 <form>
-  <button formaction="dialog.html">Open dialog</button>
+  <button formaction="open.html">Open dialog</button>
 </form>
-
 <div class="dialog"></div>
-
 <script>
   async function handleClick(event) {
     try {
       event.preventDefault();
       const response = await fetch(event.target.formAction);
       const text = await response.text();
-      dialogEl.innerHTML = text;
+      document.querySelector(".dialog").innerHTML = text;
     } catch (error) {
       console.log(error);
     }
   }
-  const dialogEl = document.querySelector(".dialog");
-  const buttonEl = document.querySelector("button");
-  buttonEl.addEventListener("click", handleClick);
+  document.querySelector("button").addEventListener("click", handleClick);
 </script>
