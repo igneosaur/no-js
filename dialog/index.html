@@ -14,10 +14,10 @@
 <div class="dialog"></div>
 
 <script>
-  async function handleClick({ target }) {
+  async function handleClick(event) {
     try {
       event.preventDefault();
-      const response = await fetch(target.formAction);
+      const response = await fetch(event.target.formAction);
       const text = await response.text();
       dialogEl.innerHTML = text;
     } catch (error) {
