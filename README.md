@@ -1,6 +1,6 @@
 # No JS
 
-An exhibit of some website interactivity and features with absolutely no JavaScript.
+An exhibit of some website interactivity and features with (almost) no JavaScript.
 
 ## Examples
 
