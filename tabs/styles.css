@@ -12,7 +12,7 @@ ul {
   list-style: none;
   margin: 0;
 }
-a {
+nav a {
   border-radius: 0;
   border: var(--border);
   display: inline-block;
